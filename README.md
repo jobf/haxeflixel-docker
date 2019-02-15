@@ -29,3 +29,11 @@ FROM httpd:2.4
 
 COPY --from=build-env /export/html5/ /usr/local/apache2/htdocs/
 ```
+
+## Env
+
+| Variable | Description | Value |
+| -------- | ----------- | ----- |
+| LIME_VERSION | The installed Lime version. | `7.2.1` |
+| OPENFL_VERSION | The installed OpenFL version. | `8.8.0` |
+| FLIXEL_VERSION | The installed HaxeFlixel version. | `4.6.0` |
