@@ -7,8 +7,8 @@ COPY ./scripts/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
 # install Lime and OpenFL
-ENV LIME_VERSION=7.2.1 \
-    OPENFL_VERSION=8.8.0
+ENV LIME_VERSION=7.6.3 \
+    OPENFL_VERSION=8.9.5
 
 RUN haxelib install lime $LIME_VERSION
 RUN haxelib install openfl $OPENFL_VERSION
