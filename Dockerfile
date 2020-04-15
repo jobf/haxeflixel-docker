@@ -14,7 +14,7 @@ RUN haxelib install lime $LIME_VERSION
 RUN haxelib install openfl $OPENFL_VERSION
 
 # install HaxeFlixel
-ENV FLIXEL_VERSION=4.6.3 \
+ENV FLIXEL_VERSION=4.7.0 \
     FLIXEL_ADDONS_VERSION=2.8.0 \
     FLIXEL_TOOLS_VERSION=1.4.4
 
