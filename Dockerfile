@@ -1,4 +1,4 @@
-FROM haxe:4.0.0
+FROM haxe:latest
 
 LABEL maintainer="gmantaos@gmail.com"
 
@@ -7,15 +7,15 @@ COPY ./scripts/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
 # install Lime and OpenFL
-ENV LIME_VERSION=7.6.3 \
-    OPENFL_VERSION=8.9.5
+ENV LIME_VERSION=7.7.0 \
+    OPENFL_VERSION=8.9.6
 
 RUN haxelib install lime $LIME_VERSION
 RUN haxelib install openfl $OPENFL_VERSION
 
 # install HaxeFlixel
 ENV FLIXEL_VERSION=4.6.3 \
-    FLIXEL_ADDONS_VERSION=2.7.5 \
+    FLIXEL_ADDONS_VERSION=2.8.0 \
     FLIXEL_TOOLS_VERSION=1.4.4
 
 RUN haxelib install flixel $FLIXEL_VERSION
