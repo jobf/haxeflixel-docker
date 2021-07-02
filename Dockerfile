@@ -7,14 +7,14 @@ COPY ./scripts/ /usr/local/bin/
 RUN chmod +x /usr/local/bin/*
 
 # install Lime and OpenFL
-ENV LIME_VERSION=7.8.0 \
-    OPENFL_VERSION=8.9.6
+ENV LIME_VERSION=7.9.0 \
+    OPENFL_VERSION=9.1.0
 
 RUN haxelib install lime $LIME_VERSION
 RUN haxelib install openfl $OPENFL_VERSION
 
 # install HaxeFlixel
-ENV FLIXEL_VERSION=4.7.0 \
+ENV FLIXEL_VERSION=4.9.0 \
     FLIXEL_ADDONS_VERSION=2.9.0 \
     FLIXEL_TOOLS_VERSION=1.4.4
 
