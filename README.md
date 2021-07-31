@@ -34,6 +34,6 @@ COPY --from=build-env /export/html5/ /usr/local/apache2/htdocs/
 
 | Variable | Description | Value |
 | -------- | ----------- | ----- |
-| LIME_VERSION | The installed Lime version. | `7.2.1` |
-| OPENFL_VERSION | The installed OpenFL version. | `8.8.0` |
-| FLIXEL_VERSION | The installed HaxeFlixel version. | `4.6.0` |
+| LIME_VERSION | The installed Lime version. | `7.9.0` |
+| OPENFL_VERSION | The installed OpenFL version. | `9.1.0` |
+| FLIXEL_VERSION | The installed HaxeFlixel version. | `4.9.0` |
