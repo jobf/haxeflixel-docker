@@ -10,6 +10,12 @@ RUN chmod +x /usr/local/bin/*
 ENV LIME_VERSION=7.9.0 \
     OPENFL_VERSION=9.1.0
 
+# install zip for packaging things up, e.g. to deploy an artifact
+RUN apt-get -y install zip
+
+# install yui-compressor to support minification
+RUN apt-get -y install yui-compressor
+
 RUN haxelib install lime $LIME_VERSION
 RUN haxelib install openfl $OPENFL_VERSION
 
