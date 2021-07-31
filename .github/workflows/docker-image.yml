@@ -26,4 +26,4 @@ jobs:
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
       
     - name: Docker Push
-      run: docker push jobf/haxeflixel-with-haxe-latest
+      run: docker push jobf/haxeflixel-with-haxe-latest:latest
